@@ -1,0 +1,344 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:with field="res" type="com.arcbees.gssssite.client.resources.AppResources"/>
+
+    <g:HTMLPanel>
+        <header class="{res.style.header}">
+            <div class="{res.grid.row} {res.style.container} {res.style.clearfix}">
+                <div class="{res.grid.col} {res.grid.col_full}">
+                    <h1>Documentation</h1>
+                </div>
+            </div>
+        </header>
+
+        <nav role="navigation" class="{res.style.nav}">
+            <div class="{res.grid.row} {res.style.container} {res.style.clearfix}">
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <a href="#/home" class="{res.style.logo}">Gss++</a>
+                </div>
+                <ul class="{res.grid.col} {res.grid.col_1_2}">
+                    <li>
+                        <a href="#/docs">Documentation</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ArcBees/gss-plus-plus">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="{res.style.content} {res.style.container}">
+            <div class="{res.grid.row} {res.style.clearfix}">
+                <div class="{res.grid.col} {res.grid.col_1_4}">
+                    <aside class="{res.style.sidebar}" ui:field="docMenu">
+                        <h2>Get started</h2>
+                        <ul>
+                            <li><a href="#/docs?details=how-to-install">How to install</a></li>
+                        </ul>
+                        <h2>Mixins</h2>
+                        <ul>
+                            <li>
+                                <a href="#/docs?details=border-radius">Border Radius</a>
+                                <ul>
+                                    <li><a href="#/docs?details=border-radius-rounded"><i class="fa fa-angle-right"></i> Rounded</a></li>
+                                    <li><a href="#/docs?details=border-radius-top"><i class="fa fa-angle-right"></i> Top</a></li>
+                                    <li><a href="#/docs?details=border-radius-bottom"><i class="fa fa-angle-right"></i> Bottom</a></li>
+                                    <li><a href="#/docs?details=border-radius-left"><i class="fa fa-angle-right"></i> Left</a></li>
+                                    <li><a href="#/docs?details=border-radius-right"><i class="fa fa-angle-right"></i> Right</a></li>
+                                    <li><a href="#/docs?details=border-radius-top-right"><i class="fa fa-angle-right"></i> Top right</a></li>
+                                    <li><a href="#/docs?details=border-radius-top-left"><i class="fa fa-angle-right"></i> Top Left</a></li>
+                                    <li><a href="#/docs?details=border-radius-bottom-right"><i class="fa fa-angle-right"></i> Bottom right</a></li>
+                                    <li><a href="#/docs?details=border-radius-bottom-left"><i class="fa fa-angle-right"></i> Bottom left</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#/docs?details=box-sizing">Box Sizing</a></li>
+                            <li>
+                                <a href="#/docs?details=gradient">Gradient</a>
+                                <ul>
+                                    <li><a href="#/docs?details=gradient-vertical"><i class="fa fa-angle-right"></i> Vertical</a></li>
+                                    <li><a href="#/docs?details=gradient-horizontal"><i class="fa fa-angle-right"></i> Horizontal</a></li>
+                                    <li><a href="#/docs?details=gradient-diagonal-top-left"><i class="fa fa-angle-right"></i> Diagonal (Top left)</a></li>
+                                    <li><a href="#/docs?details=gradient-diagonal-bottom-left"><i class="fa fa-angle-right"></i> Diagonal (Bottom left)</a></li>
+                                    <li><a href="#/docs?details=gradient-circular"><i class="fa fa-angle-right"></i> Circular</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#/docs?details=opacity">Opacity</a></li>
+                            <li><a href="#/docs?details=outline">Outline</a></li>
+                            <li>
+                                <a href="#/docs?details=shadow">Shadow</a>
+                                <ul>
+                                    <li><a href="#/docs?details=shadow-color"><i class="fa fa-angle-right"></i> Color</a></li>
+                                    <li><a href="#/docs?details=shadow-inner"><i class="fa fa-angle-right"></i> Inner</a></li>
+                                    <li><a href="#/docs?details=shadow-inner-color"><i class="fa fa-angle-right"></i> Inner Color</a></li>
+                                    <li><a href="#/docs?details=shadow-text"><i class="fa fa-angle-right"></i> Text</a></li>
+                                    <li><a href="#/docs?details=shadow-none"><i class="fa fa-angle-right"></i> None</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#/docs?details=transform">Transform</a>
+                                <ul>
+                                    <li><a href="#/docs?details=transform-flip"><i class="fa fa-angle-right"></i> Flip</a></li>
+                                    <li><a href="#/docs?details=transform-rotate"><i class="fa fa-angle-right"></i> Rotate</a></li>
+                                    <li><a href="#/docs?details=transform-scale"><i class="fa fa-angle-right"></i> Scale</a></li>
+                                    <li><a href="#/docs?details=transform-translate"><i class="fa fa-angle-right"></i> Translate</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#/docs?details=transition">Transition</a>
+                                <ul>
+                                    <li><a href="#/docs?details=transition-effect"><i class="fa fa-angle-right"></i> Effect</a></li>
+                                    <li><a href="#/docs?details=transition-delay"><i class="fa fa-angle-right"></i> Delay</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="{res.grid.col} {res.grid.col_3_4} {res.style.docs}">
+                    <article>
+                        <h2 id="how-to-install">How to install</h2>
+                        <p>Add <em>com/arcbees/gssplusplus/mixin/client/mixin.gss</em> and your Gss file path in a
+                            <em>@Source</em> annotation.</p>
+                        <code>
+                            <pre>@Source({"com/arcbees/gssplusplus/mixin/client/mixins.gss", "style.gss"})
+public Style style();</pre>
+                        </code>
+                        <p>Add a <em>@require 'mixins';</em> at the beginning of your Gss file that uses the mixins.
+                            This will force the compiler to check at compile time that the source is well imported.</p>
+                        <p>You can now use any mixins in your style.gss file.</p>
+                    </article>
+
+                    <article>
+                        <h2 id="border-radius">Border radius</h2>
+
+                        <h3>Params</h3>
+
+                        <ul>
+                            <li>@param TOP size of the top corners</li>
+                            <li>@param BOTTOM size of the bottom corners</li>
+                            <li>@param LEFT size of the left corners</li>
+                            <li>@param RIGHT size of the right corners</li>
+                            <li>@param TOP_RIGHT size of the top right corner</li>
+                            <li>@param BOTTOM_RIGHT size of the bottom right corner</li>
+                            <li>@param BOTTOM_LEFT size of the bottom left corner</li>
+                            <li>@param TOP_LEFT size of the top left corner</li>
+                            <li>@param SIZE size of all corners</li>
+                        </ul>
+
+                        <h3>Mixins</h3>
+
+                        <h4>borderradius(TOP_RIGHT, BOTTOM_RIGHT, BOTTOM_LEFT, TOP_LEFT)</h4>
+                        <code>@mixin borderradius(5px, 0, 10px, 0);</code>
+
+                        <h4 id="border-radius-rounded">rounded(SIZE)</h4>
+                        <code>@mixin rounded(12px);</code>
+
+                        <h4 id="border-radius-top">borderradius_t(TOP)</h4>
+                        <code>@mixin borderradius_t(5px);</code>
+
+                        <h4 id="border-radius-bottom">borderradius_b(BOTTOM)</h4>
+                        <code>@mixin borderradius_b(5px);</code>
+
+                        <h4 id="border-radius-left">borderradius_l(LEFT)</h4>
+                        <code>@mixin borderradius_l(5px);</code>
+
+                        <h4 id="border-radius-right">borderradius_r(RIGHT)</h4>
+                        <code>@mixin borderradius_r(5px);</code>
+
+                        <h4 id="border-radius-top-right">borderradius_tr(TOP_RIGHT)</h4>
+                        <code>@mixin borderradius_tr(5px);</code>
+
+                        <h4 id="border-radius-top-left">borderradius_tl(TOP_LEFT)</h4>
+                        <code>@mixin borderradius_tl(5px);</code>
+
+                        <h4 id="border-radius-bottom-right">borderradius_br(BOTTOM_RIGHT)</h4>
+                        <code>@mixin borderradius_br(5px);</code>
+
+                        <h4 id="border-radius-bottom-left">borderradius_bl(BOTTOM_LEFT)</h4>
+                        <code>@mixin borderradius_bl(5px);</code>
+                    </article>
+
+                    <article>
+                        <h2 id="box-sizing">Box Sizing</h2>
+
+                        <h3>Mixins</h3>
+
+                        <h4>boxsizing()</h4>
+                        <code>@mixin boxsizing();</code>
+                    </article>
+
+                    <article>
+                        <h2 id="gradient">Gradient</h2>
+
+                        <h3>Params</h3>
+
+                        <ul>
+                            <li>@param FIRST_COLOR first color</li>
+                            <li>@param SECOND_COLOR second color</li>
+                            <li>@param INNER_COLOR inner color</li>
+                            <li>@param OUTER_COLOR outer color</li>
+                        </ul>
+
+                        <h3>Mixins</h3>
+
+                        <h4 id="gradient-vertical">gradient(FIRST_COLOR, SECOND_COLOR)</h4>
+                        <code>@mixin gradient(#ff22ee, #0044e1);</code>
+
+                        <h4 id="gradient-horizontal">gradient_h(FIRST_COLOR, SECOND_COLOR)</h4>
+                        <code>@mixin gradient_h(#ff22ee, #0044e1);</code>
+
+                        <h4 id="gradient-diagonal-top-left">gradient_tlbr(FIRST_COLOR, SECOND_COLOR)</h4>
+                        <code>@mixin gradient(#ff22ee, #0044e1);</code>
+
+                        <h4 id="gradient-diagonal-bottom-left">gradient_bltr(FIRST_COLOR, SECOND_COLOR)</h4>
+                        <code>@mixin gradient(#ff22ee, #0044e1);</code>
+
+                        <h4 id="gradient-circular">gradient_circular(FIRST_COLOR, SECOND_COLOR)</h4>
+                        <code>@mixin gradient(#ff22ee, #0044e1);</code>
+                    </article>
+
+                    <article>
+                        <h2 id="opacity">Opacity</h2>
+
+                        <h3>Params</h3>
+
+                        <ul>
+                            <li>@param ALPHA shadow opacity (0 to 1)</li>
+                        </ul>
+
+                        <h3>Mixins</h3>
+
+                        <h4>opacity(ALPHA)</h4>
+                        <code>@mixin alpha(0.5);</code>
+                    </article>
+
+                    <article>
+                        <h2 id="outline">Outline</h2>
+
+                        <h3>Params</h3>
+
+                        <ul>
+                            <li>@param SIZE size of the border outline</li>
+                            <li>@param BORDER border style type</li>
+                            <li>@param COLOR color of the outline</li>
+                            <li>@param OFFSET offset from the element</li>
+                        </ul>
+
+                        <h3>Mixins</h3>
+
+                        <h4>outline(SIZE, BORDER, COLOR, OFFSET)</h4>
+                        <code>@mixin outline(2px, solid, #000, 10px);</code>
+                    </article>
+
+                    <article>
+                        <h2 id="shadow">Shadow</h2>
+
+                        <h3>Params</h3>
+
+                        <ul>
+                            <li>@param HORIZONTAL position of the horizontal shadow</li>
+                            <li>@param VERTICAL position of the vertical shadow</li>
+                            <li>@param BLUR distance of the blur</li>
+                            <li>@param SPREAD shadow size</li>
+                            <li>@param COLOR shadow color</li>
+                            <li>@param ALPHA shadow opacity (0 to 1)</li>
+                        </ul>
+
+                        <h3>Mixins</h3>
+
+                        <h4>shadow(HORIZONTAL, VERTICAL, BLUR, ALPHA)</h4>
+                        <code>@mixin shadow(1px, 1px, 5px, 0.3);</code>
+
+                        <h4 id="shadow-color">shadow_color(HORIZONTAL, VERTICAL, BLUR, SPREAD, COLOR)</h4>
+                        <code>@mixin shadow_color(5px, 5px, 10px, #22ee22);</code>
+
+                        <h4 id="shadow-inner">shadow_inner(HORIZONTAL, VERTICAL, BLUR, ALPHA)</h4>
+                        <code>@mixin shadow_inner(0, 5px, 2px, 0.5);</code>
+
+                        <h4 id="shadow-inner-color">shadow_inner_color(HORIZONTAL, VERTICAL, BLUR, SPREAD, COLOR)</h4>
+                        <code>@mixin shadow_inset(0, 1px, 2px, 2px, rgba(200, 100, 50, 0.2));</code>
+
+                        <h4 id="shadow-text">shadow_text(HORIZONTAL, VERTICAL, BLUR, ALPHA)</h4>
+                        <code>@mixin shadow_text(2px, 2px, 1px, 0.5);</code>
+
+                        <h4 id="shadow-text-color">shadow_text_color(HORIZONTAL, VERTICAL, BLUR, COLOR)</h4>
+                        <code>@mixin shadow_text_color(0, 5px, 2px, #11ff66);</code>
+
+                        <h4 id="shadow-none">shadow_none()</h4>
+                        <code>@mixin shadow_none();</code>
+                    </article>
+
+                    <article>
+                        <h2 id="transform">Transform</h2>
+
+                        <h3>Params</h3>
+
+                        <ul>
+                            <li>@param DEGREES angle of the rotation</li>
+                            <li>@param RATIO_HORIZONTAL horizontal ratio (x) where 1 = no changes and 2 = twice the
+                                size
+                            </li>
+                            <li>@param RATIO_VERTICAL vertical ratio (y) where 1 = no changes and 2 = twice the size</li>
+                            <li>@param HORIZONTAL horizontal change (x) in pixels</li>
+                            <li>@param VERTICAL vertical change (x) in pixels</li>
+                        </ul>
+
+                        <h3 id="transform-flip">Flip</h3>
+
+                        <h4>flip_horizontal()</h4>
+                        <code>@mixin flip_horizontal();</code>
+
+                        <h4>flip_vertical()</h4>
+                        <code>@mixin flip_vertical();</code>
+
+                        <h3 id="transform-rotate">Rotate</h3>
+
+                        <h4>rotate(DEGREE)</h4>
+                        <code>@mixin rotate(45deg);</code>
+
+                        <h4>rotate_180_cw()</h4>
+                        <code>@mixin rotate_180_cw();</code>
+
+                        <h4>rotate_180_ccw()</h4>
+                        <code>@mixin rotate_180_ccw();</code>
+
+                        <h3 id="transform-scale">Scale</h3>
+
+                        <h4>scale(RATIO_HORIZONTAL, RATIO_VERTICAL)</h4>
+                        <code>@mixin scale(1.5, 1);</code>
+
+                        <h3 id="transform-translate">Translate</h3>
+
+                        <h4>translate(HORIZONTAL, VERTICAL)</h4>
+                        <code>@mixin translate(10px, 20px);</code>
+                    </article>
+
+                    <article>
+                        <h2 id="transition">Transition</h2>
+
+                        <h3>Params</h3>
+
+                        <ul>
+                            <li>@param PROPERTY name of the CSS property affected</li>
+                            <li>@param DURATION time of the transition effect</li>
+                            <li>@param EFFECT speed curve of the transition effect</li>
+                            <li>@param DELAY time before the transition effect starts</li>
+                        </ul>
+
+                        <h3>Mixins</h3>
+
+                        <h4>transition(PROPERTY, DURATION)</h4>
+                        <code>@mixin transition(margin-left, 200);</code>
+
+                        <h4 id="transition-effect">transition_effect(PROPERTY, DURATION, EFFECT)</h4>
+                        <code>@mixin transition(all, 500, ease);</code>
+
+                        <h4 id="transition-delay">transition_delay(PROPERTY, DURATION, EFFECT, DELAY)</h4>
+                        <code>@mixin transition(width, 250, ease, 100);</code>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

@@ -1,0 +1,11 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:with field="res" type="com.arcbees.gssssite.client.resources.AppResources"/>
+
+    <g:HTMLPanel>
+        <div role="main">
+            <g:SimplePanel ui:field="main"/>
+        </div>
+    </g:HTMLPanel>
+</ui:UiBinder>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module rename-to='gsss'>
+    <inherits name='com.google.gwt.user.User'/>
+    <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+
+    <inherits name="com.gwtplatform.dispatch.rest.DispatchRest"/>
+    <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
+    <inherits name="com.google.gwt.query.Query"/>
+    <inherits name="com.google.gwt.resources.GssResource"/>
+
+    <source path='client'/>
+
+    <extend-configuration-property name="gin.ginjector.modules" value="com.arcbees.gssssite.client.ClientModule"/>
+
+    <set-configuration-property name="CssResource.style" value="pretty"/>
+
+    <add-linker name="xsiframe"/>
+</module>

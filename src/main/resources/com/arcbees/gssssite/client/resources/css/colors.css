@@ -1,0 +1,8 @@
+@provide 'colors';
+
+@def C_PRIMARY              eval("com.arcbees.gssssite.client.resources.Colors.C_PRIMARY");
+@def C_PRIMARY_LIGHT        eval("com.arcbees.gssssite.client.resources.Colors.C_PRIMARY_LIGHT");
+@def C_PRIMARY_DARK         eval("com.arcbees.gssssite.client.resources.Colors.C_PRIMARY_DARK");
+@def C_BACKGROUND           eval("com.arcbees.gssssite.client.resources.Colors.C_BACKGROUND");
+@def C_TEXT                 eval("com.arcbees.gssssite.client.resources.Colors.C_TEXT");
+@def C_TEXT_LIGHT           eval("com.arcbees.gssssite.client.resources.Colors.C_TEXT_LIGHT");
